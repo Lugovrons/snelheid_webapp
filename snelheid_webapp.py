@@ -408,6 +408,6 @@ if gecombineerde_eenheden is not None and vraagtype is not None:
 else:
     # Toon de starttekst
     st.markdown("---")
-    st.warning("Kies links in de zijbalk waarmee je wil oefenen")
+    st.warning("Kies links in de zijbalk waarmee je wil oefenen (op je telefoon moet je op de pijltjes linksboven klikken)")
 
 
