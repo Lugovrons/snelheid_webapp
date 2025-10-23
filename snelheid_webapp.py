@@ -257,7 +257,7 @@ vraagtype_temp_codes = {
 
 
 vraagtype_temp_select = st.sidebar.selectbox(
-    "**Welke berekening wil je mee oefenen?**",
+    "Welke berekening wil je mee oefenen?",
     list(vraagtype_temp_codes.keys()),
     index = None,
     placeholder = "Maak een keuze..."
