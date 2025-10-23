@@ -183,6 +183,11 @@ eenheid_waarde_s = ""
 eenheid_waarde_t = ""
 opdracht_tekst = "Maak een keuze in de zijbalk om een opdracht te starten."
 
+st.sidebar.header("")
+st.sidebar.header("")
+st.sidebar.header("")
+st.sidebar.header("")
+st.sidebar.header("")
 # ------------------------------
 # sidebar selectie 1: eenheden
 # ------------------------------
@@ -231,9 +236,9 @@ if gecombineerde_eenheden_select is not None:
     st.sidebar.markdown(f"**Afstand** ($\mathbf{{s}}$): {eenheid_waarde_s}")
     st.sidebar.markdown(f"**Tijd** ($\mathbf{{t}}$): {eenheid_waarde_t}")
 
-    st.sidebar.markdown("---")
+    
     # Display de geselecteerde eenheden
-
+st.sidebar.markdown("---")
 # ------------------------------
 # sidebar selectie 2: vraagtype
 # ------------------------------
@@ -280,7 +285,7 @@ if vraagtype_temp_select is not None:
             antwoord_type = "De tijd is "
         
  
-st.sidebar.write(vraagtype_label)
+# st.sidebar.write(vraagtype_label)
 
 
 
@@ -313,7 +318,7 @@ if gecombineerde_eenheden == "3" and vraagtype_vast is not None:
 # ---------------------------------------------------------
 
 # Header
-st.header("Aron's fantastische (echt waar!!) oefentool")
+st.header("Aron's fantastische (echt waar!!) oefenprogramma")
 
 
 
