@@ -1,6 +1,18 @@
 [theme]
-base="dark" 
-primaryColor="#FF4B4B" 
-backgroundColor="#1E1E1E" 
-textColor="#FAFAFA" 
-font="sans serif"
+# Erf de basisstijl van Streamlit's donkere of lichte modus
+base="light" # of "dark"
+
+# Primaire kleur: voor interactieve elementen (knoppen, sliders, etc.)
+primaryColor="#024b83"
+
+# Achtergrondkleur: voor de hoofdapp-achtergrond
+backgroundColor="#f1e4db"
+
+# Secundaire achtergrondkleur: voor de zijbalk, codeblokken, etc.
+secondaryBackgroundColor="#eac3a7"
+
+# Tekstkleur
+textColor="#004a82"
+
+# Lettertype: kies uit "sans serif", "serif", of "monospace"
+font="monospace"
