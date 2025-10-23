@@ -183,11 +183,12 @@ eenheid_waarde_s = ""
 eenheid_waarde_t = ""
 opdracht_tekst = "Maak een keuze in de zijbalk om een opdracht te starten."
 
-st.sidebar.header("")
-st.sidebar.header("")
-st.sidebar.header("")
-st.sidebar.header("")
-st.sidebar.header("")
+#st.sidebar.header("")
+#st.sidebar.header("")
+#st.sidebar.header("")
+#st.sidebar.header("")
+#st.sidebar.header("")
+#st.sidebar.header("")
 # ------------------------------
 # sidebar selectie 1: eenheden
 # ------------------------------
@@ -231,10 +232,10 @@ if gecombineerde_eenheden_select is not None:
         eenheid_waarde_s = "mix"
         eenheid_waarde_t = "mix"
 
-    st.sidebar.subheader("Geselecteerde eenheden:")
-    st.sidebar.markdown(f"**Snelheid** ($\mathbf{{v_{{gem}}}}$): {eenheid_waarde_vgem}")
-    st.sidebar.markdown(f"**Afstand** ($\mathbf{{s}}$): {eenheid_waarde_s}")
-    st.sidebar.markdown(f"**Tijd** ($\mathbf{{t}}$): {eenheid_waarde_t}")
+    # st.sidebar.subheader("Geselecteerde eenheden:")
+    # st.sidebar.markdown(f"**Snelheid** ($\mathbf{{v_{{gem}}}}$): {eenheid_waarde_vgem}")
+    # st.sidebar.markdown(f"**Afstand** ($\mathbf{{s}}$): {eenheid_waarde_s}")
+    # st.sidebar.markdown(f"**Tijd** ($\mathbf{{t}}$): {eenheid_waarde_t}")
 
     
     # Display de geselecteerde eenheden
@@ -318,7 +319,8 @@ if gecombineerde_eenheden == "3" and vraagtype_vast is not None:
 # ---------------------------------------------------------
 
 # Header
-st.header("Aron's fantastische (echt waar!!) oefenprogramma")
+st.header("Aron's fantastische oefenprogramma")
+st.markdown("Hier kan je oefenen met het rekenen met gemiddelde snelheid")
 
 
 
