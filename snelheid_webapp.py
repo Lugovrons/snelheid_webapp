@@ -8,7 +8,7 @@ def waardegenerator():
     a = 1 
     b = 100
     getal = random.uniform(a, b)
-    afgerond = round(getal, 2)
+    afgerond = int(getal)
     return afgerond
 
 def opdracht_waarde(): # voor de random opdrachtkeuze
