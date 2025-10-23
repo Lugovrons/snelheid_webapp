@@ -262,7 +262,7 @@ if vraagtype_temp_select is not None:
 
     if vraagtype_temp == "4":
         vraagtype_vast = "4" #trigger random opdrachtkeuze
-        vraagtype_label = "Alles door elkaarrr heen"
+        vraagtype_label = "Alles door elkaar heen"
         antwoord_type = None
     else:
         vraagtype_vast = vraagtype_temp
