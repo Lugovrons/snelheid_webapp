@@ -24,7 +24,7 @@ def eenheid_waarde(): # voor de random opdrachtkeuze
     return getal
 
 def genereer_random_eenheden():
-    """Bepaalt willekeurige eenheden voor de 'Alles door elkaar' (mix) optie."""
+    #"""Bepaalt willekeurige eenheden voor de 'Alles door elkaar' (mix) optie."""
     
     # Random vgem eenheid
     eenheid_waarde_vgem_index = eenheid_waarde()
@@ -193,11 +193,11 @@ st.sidebar.subheader("Kies de eenheden")
 gecombineerde_eenheden_codes = {
         "Alleen m/s, m en s": "1",
         "Alleen km/h, km en h": "2",
-        "Alles door elkaar (moeilijk!)": "3"
+        "Alles door elkaar": "3"
     }
 
 gecombineerde_eenheden_select = st.sidebar.selectbox(
-        "Waar wil je mee oefenen?",
+        "Welke eenheden wil je mee oefenen?",
         list(gecombineerde_eenheden_codes.keys()),
         index = None,
         placeholder = "Maak een keuze..."
@@ -243,7 +243,7 @@ vraagtype_temp_codes = {
     "Snelheid": "1",
     "Afstand": "2",
     "Tijd": "3",
-    "Alles": "4"
+    "Alles door elkaar": "4"
 } 
 
 # vraagtype status
@@ -251,7 +251,7 @@ vraagtype_temp_codes = {
 
 
 vraagtype_temp_select = st.sidebar.selectbox(
-    "**Wat wil je berekenen?**",
+    "**Welke berekening wil je mee oefenen?**",
     list(vraagtype_temp_codes.keys()),
     index = None,
     placeholder = "Maak een keuze..."
@@ -262,21 +262,21 @@ if vraagtype_temp_select is not None:
 
     if vraagtype_temp == "4":
         vraagtype_vast = "4" #trigger random opdrachtkeuze
-        vraagtype_label = "gecombineerd"
+        vraagtype_label = "Alles door elkaarrr heen"
         antwoord_type = None
     else:
         vraagtype_vast = vraagtype_temp
         if vraagtype_temp == "1":
             vraagtype_vast = "1"
-            vraagtype_label = "**Geselecteerd vraagtype:** alleen snelheid ($\mathbf{v_{gem}}$)"
+            vraagtype_label = "**Geselecteerd vraagtype:** alleen snelheid ($\mathbf{v_{gem}}$) berekenen"
             antwoord_type = "De gemiddelde snelheid is: "
         elif vraagtype_temp == "2":
             vraagtype_vast = "2"
-            vraagtype_label = "**Geselecteerd vraagtype:** alleen afstand ($\mathbf{s}$)"
+            vraagtype_label = "**Geselecteerd vraagtype:** alleen afstand ($\mathbf{s}$) berekenen"
             antwoord_type = "De afstand is "
         elif vraagtype_temp == "3":
             vraagtype_vast = "3"
-            vraagtype_label = "**Geselecteerd vraagtype:** alleen tijd ($\mathbf{t}$)"
+            vraagtype_label = "**Geselecteerd vraagtype:** alleen tijd ($\mathbf{t}$) berekenen"
             antwoord_type = "De tijd is "
         
  
